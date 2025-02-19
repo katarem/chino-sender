@@ -1,0 +1,17 @@
+{
+  "name": "chino-sender",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chino-sender": "file:",
+    "discord.js": "^14.18.0"
+  }
+}
