@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --env-file=.env src/index.js"
+    "start": "nodemon --env-file=.env src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,12 @@
   "description": "",
   "dependencies": {
     "chino-sender": "file:",
-    "discord.js": "^14.18.0"
+    "discord.js": "^14.18.0",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }

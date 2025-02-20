@@ -36,4 +36,6 @@ const main = async () => {
     }, responseDelay);
 }
 
-main();
+const backend = require('./backend.js');
+backend()
+// main();
