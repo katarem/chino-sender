@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
 
 const folder = '/recipes/';
 
-const backend = () => {
+const backend = (port) => {
     const upload = multer({ storage: storage });
 
     const app = express();
@@ -53,9 +53,9 @@ const backend = () => {
     });
     
 
-    app.listen(3000, () => console.log('[SERVER] Listening on port 3000'));
+    app.listen(port, () => console.log(`[SERVER] Listening on port ${port}`));
 }
 
 
 
-module.exports = backend;
+module.exports = { backend };
